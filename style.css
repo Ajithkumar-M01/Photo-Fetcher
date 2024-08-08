@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    padding: 2rem;
+}
+
+header #logo {
+    text-decoration: none;
+    color: black;
+}
+
+.search-form {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.search-form input {
+    font-size: 2rem;
+    padding: 0.25em 0.5em;
+    width: 100%;
+    border: 2px solid rgb(216, 147, 18);
+    border-radius: 0.25em;
+}
+
+.search-form button {
+    border: none;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    background: rgb(216, 147, 18);
+    color: black;
+    cursor: pointer;
+    border-radius: 0.25em;
+}
+
+.gallery-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 0.5rem 0rem;
+}
+
+.gallery-info a {
+    color: grey;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 2rem 0rem;
+    width: 80%;
+    margin: auto;
+    row-gap: 5rem;
+    column-gap: 3rem;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-button {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+    padding: 1rem 2rem;
+    background: rgb(216, 147, 18);
+    color: black;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 0.25em;
+}
